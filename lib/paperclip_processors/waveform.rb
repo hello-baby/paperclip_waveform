@@ -22,7 +22,7 @@ module Paperclip
 
       ::Waveform.generate wav, png, @waveform_opts
 
-      png
+      File.new(png.path)
     end
   end
 end
